@@ -39,6 +39,7 @@ namespace AlunoWFA.Classes
         #endregion
 
         #region Metodos
+
         public static List<Aluno> GerarAlunos()
         {
             List<Aluno> alunos = new List<Aluno>();
@@ -62,23 +63,31 @@ namespace AlunoWFA.Classes
                 cn.dr = cn.comando.ExecuteReader(); //Para Select 
                 if (cn.dr.HasRows)
                 {
+
                     while (cn.dr.Read())
                     {
                         alunoLogado.Matricula = (int)cn.dr[0];
                         alunoLogado.Nome = (string)cn.dr[1];
-                        alunoLogado.DtNascimento = (DateTime)cn.dr[3];
-                        alunoLogado.Email = (string)cn.dr[2];
+                        alunoLogado.DtNascimento = Convert.ToDateTime(cn.dr[2]);
+                        alunoLogado.Email = (string)cn.dr[3];
                         alunoLogado.Senha = (string)cn.dr[4];
                         alunoLogado.Ativo = (bool)cn.dr[5];
                     }
 
-                    if (alunoLogado != null && alunoLogado.Senha == senha)
+                    if (alunoLogado.Ativo == true)
                     {
-                        return alunoLogado;
+                        if (alunoLogado != null && alunoLogado.Senha == senha)
+                        {
+                            return alunoLogado;
+                        }
+                        else
+                        {
+                            throw new Exception("E-mail e/ousenha inválidos!");
+                        }
                     }
                     else
                     {
-                        throw new Exception("E-mail e/ousenha inválidos!");
+                        throw new Exception("O usuário está bloqueado");
                     }
                 }
                 else
@@ -115,6 +124,11 @@ namespace AlunoWFA.Classes
         {
             alunos.RemoveAll(a => a.Matricula == this.Matricula);
             return alunos.OrderBy(a => a.Matricula).ToList();
+        }
+
+        public int BloquearAluno ()
+        {
+
         }
 
         #endregion

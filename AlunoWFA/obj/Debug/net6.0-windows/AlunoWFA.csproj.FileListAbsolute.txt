@@ -55,3 +55,10 @@ C:\Users\wellington.vxavier\source\repos\calculo\AlunoWFA\AlunoWFA\obj\Debug\net
 C:\Users\wellington.vxavier\source\repos\calculo\AlunoWFA\AlunoWFA\obj\Debug\net6.0-windows\AlunoWFA.pdb
 C:\Users\wellington.vxavier\source\repos\calculo\AlunoWFA\AlunoWFA\obj\Debug\net6.0-windows\AlunoWFA.genruntimeconfig.cache
 C:\Users\wellington.vxavier\source\repos\calculo\AlunoWFA\AlunoWFA\obj\Debug\net6.0-windows\ref\AlunoWFA.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\wellington.vxavier\source\repos\AlunoWFA\AlunoWFA\obj\Debug\net6.0-windows\AlunoWFA.csproj.CopyComplete
